@@ -41,7 +41,7 @@ const NewIssuePage = () => {
         {errors.title && <Text color = "red" as = "p">{errors.title.message}</Text>}
         <Controller name = 'description' control = {control} render = {({field}) => <SimpleMDE placeholder="Description" {...field}/>}></Controller>
         {errors.description && <Text color = "red" as = "p">{errors.description.message}</Text>}
-        <Button>Subbmit New Issue</Button>
+        <Button>Submit New Issue</Button>
       </form>
     </div>
   );
