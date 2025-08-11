@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import React from 'react'
 import { FaBug } from "react-icons/fa";
-
+import classnames from 'classnames';
 
 function Navbar() {
   const currentPath = usePathname();

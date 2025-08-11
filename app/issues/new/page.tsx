@@ -1,5 +1,6 @@
 'use client';
 import { Button, Callout, Text, TextArea, TextField } from '@radix-ui/themes';
+import dynamic from 'next/dynamic';
 import SimpleMDE from "react-simplemde-editor";
 import "easymde/dist/easymde.min.css";
 import React, { useState } from 'react';
@@ -9,6 +10,7 @@ import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { createIssueSchema } from '@/app/validationSchemas';
 import { z } from 'zod';
+
 
 type IssueForm = z.infer<typeof createIssueSchema>; //zod infer types based on schema.
 
